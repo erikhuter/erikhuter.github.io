@@ -6,7 +6,7 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: headshot.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Manhattan, KS</p>
@@ -29,8 +29,8 @@ My name is Erik Huter. I am an undergraduate student at Knasas State University 
 
 My summer reading list includes, and not partciularly in this order: Calculus on Manifold by Micahel Spivak, Smooth Manifolds by John Lee, Analysis on Metric Measure Spaces, Lectures on Analysis on Metric Spaces by Juha Heinonen, and Real and Complex Analysis by Walter Rudin. I have collected various solutions to exercises from these books (and other spots) here.
 
-My research interests currently lie in Real and Complex Analysis, but I am still young in my mathematical joruney and enjoy exploring all other areas of mathematics.
+My research interests currently lie in real and complex analysis, but I am still young in my mathematical joruney and look forward to exploring many other areas of mathematics.
 
-Other books/areas I am actively looking to study in introductory category theory, and a deeper dive into complex analysis. I welcome any and all reccomendatinos for textbooks in these subjects (or even otherss!).
+Other books/areas I am actively looking to study in introductory category theory, and a deeper dive into complex analysis. I welcome any and all reccomendations for textbooks in these subjects (or even others!).
 
-My interests outside of mathematics include sports (Go Cats!), video games, and my two cats Snowflake and Fubini. I also enjoy the occasional rock climb.
+My hobbies and interests interests outside of mathematics include sports (Go Cats!), video games, and my two cats Snowflake and Fubini. I also enjoy the occasional rock climb.
