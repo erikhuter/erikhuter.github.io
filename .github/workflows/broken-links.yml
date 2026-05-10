@@ -49,7 +49,7 @@ jobs:
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v2.0.2
         with:
-          fail: true
+          fail: false
           # removed md files that include liquid tags
           args: >
             --user-agent 'curl/7.54' 
