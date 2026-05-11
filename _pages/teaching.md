@@ -1,15 +1,21 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Course materials, schedules, and resources for classes taught.
+title: Teaching
+description: Undergraduate Teaching Assistant.
 nav: true
-nav_order: 6
+nav_order: 4
 calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+This semester, I am one of the innaugraual undergradaute teaching assistant at K-State. 
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+I am teaching (course section) on (days) at (time). My office is CW ___ located in (location). My office hours are (times), but feel free to stop by any time.
 
-{% include courses.liquid %}
+Here are some resources for the course (link1), (link2), (link3).
+
+I have attached my public calendar below.
+
+{% include calendar.liquid calendar_id='huter.erik@gmail.com' timezone='US/Chicago' %}
+
+<!-- {% include courses.liquid %} -->
