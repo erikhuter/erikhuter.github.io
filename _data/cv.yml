@@ -43,7 +43,6 @@ cv:
         start_date: 2019
         end_date: 2023
         score: "4.00 GPA"
-        studyType: ""
         highlights:
           - Description 1.
           - Description 2.

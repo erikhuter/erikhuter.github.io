@@ -50,10 +50,12 @@ mathjax: true
 $
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
 \newcommand{\RP}{\operatorname{Re}}
 \newcommand{\IP}{\operatorname{Im}}
 \newcommand{\abs}[1]{\left| #1 \right|}
 \newcommand{\p}[1]{\left( #1 \right)}
+\newcommand{\qed}{\blacksquare}
 $
 
 ##### Chapter 1: Example Chapter
