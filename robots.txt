@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.erikhuter.com/sitemap.xml
+Sitemap: https://erikhuter.com/sitemap.xml
