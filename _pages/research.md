@@ -8,7 +8,7 @@ nav_order: 3
 
 #### **Analysis on Metric Measure Spaces**
 
-I am currently working with **Dr. Lizaveta Ihnatsyeva** on a project titled *Analysis on Metric Measure Spaces*. 
+I am currently working with **Dr. Lizaveta Ihnatsyeva** on a project titled _Analysis on Metric Measure Spaces_.
 
 The study of regularity and smoothness properties of functions is an essential part of mathematical analysis. Currently, the theory of smooth functions (in its generalized sense) has become an extensive, actively developing area.
 

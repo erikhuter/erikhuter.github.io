@@ -8,9 +8,9 @@ nav_order: 4
 calendar: true
 ---
 
-This semester, I am one of the innaugraual undergradaute teaching assistant at K-State. 
+This semester, I am one of the innaugraual undergradaute teaching assistant at K-State.
 
-I am teaching (course section) on (days) at (time). My office is CW ___ located in (location). My office hours are (times), but feel free to stop by any time.
+I am teaching (course section) on (days) at (time). My office is CW \_\_\_ located in (location). My office hours are (times), but feel free to stop by any time.
 
 Here are some resources for the course (link1), (link2), (link3).
 

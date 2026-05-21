@@ -47,5 +47,4 @@ nav_order: 6
   <div class="masonry-item">{% include figure.liquid path="assets/img/senior2.JPG" caption="" class="img-fluid rounded z-depth-1" %}</div>
 </div>
 
-
 <!-- *You can add more images by repeating the include block above.* -->

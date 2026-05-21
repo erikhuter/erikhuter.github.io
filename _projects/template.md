@@ -59,7 +59,7 @@ $
 \newcommand{\qed}{\blacksquare}
 $
 
-##### Chapter 1: ... 
+##### Chapter 1: ...
 
 <div class="question-block">
   <span class="question-label">Exercise 1.1</span>

@@ -4,7 +4,7 @@ title: Real and Complex Analysis by Walter Rudin
 description: Selected solutions for various questions from this book.
 img: #assets/img/root2.png
 importance: 5
-category: Textbook Solutions          #this is where the category goes
+category: Textbook Solutions #this is where the category goes
 related_publications: false
 mathjax: true
 ---
@@ -58,7 +58,6 @@ $
 \newcommand{\p}[1]{\left( #1 \right)}
 \newcommand{\qed}{\blacksquare}
 $
-
 
 ##### Chapter 1: ...
 

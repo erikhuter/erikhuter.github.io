@@ -4,7 +4,7 @@ title: Calculus on Manifolds by Micahel Spivak
 description: Selected solutions for various questions from this book.
 img: #assets/img/spivak.jpg
 importance: 2
-category: Textbook Solutions          #this is where the category goes
+category: Textbook Solutions #this is where the category goes
 related_publications: false
 mathjax: true
 ---
