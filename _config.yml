@@ -8,16 +8,16 @@ last_name: Huter
 contact_note: >
   My personal email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  This website will be a personal repository of my projects, information, and research. It will also hold my CV and other academic information about Erik Huter and my work in math. I am a K-State student and interested in pursuing a PhD in math.
+  Personal website of Erik Huter, a mathematics student at Kansas State University (K-State). Explore my research in analysis, projects, CV, and more!
 author: Erik Huter
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Erik, Huter, Erik Huter, portfolio-website, website, math, research, K-State, PhD, Kansas State University, Kansas State, KSU, mathematics, analysis, measure theory, geometric mesaure theory, sobolev spaces # add your own keywords or leave empty
+keywords: "Erik Huter, Erik Huter math, Erik Huter K-State, Erik Huter research, Kansas State University mathematics, pure mathematics portfolio, analysis, Sobolev spaces, geometric measure theory, complex analysis, potential theory, academic CV math PhD"
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: books.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://erikhuter.github.io/ # the base hostname & protocol for your site
+url: https://erikhuter.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
