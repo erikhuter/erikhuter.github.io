@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://erikhuter.github.io//sitemap.xml
+Sitemap: https://erikhuter.github.io/sitemap.xml
