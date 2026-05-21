@@ -48,37 +48,32 @@ ninja.data = [{
           title: 'Example Questions and Solutions',
           description: "Selected solutions for various example questions.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/example/";
+              window.location.href = "/projects/example.html";
             },},{id: "projects-lectures-on-analysis-on-metric-spaces-by-juha-heinonen",
           title: 'Lectures on Analysis on Metric Spaces by Juha Heinonen',
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/heinonen/";
+              window.location.href = "/projects/heinonen.html";
             },},{id: "projects-introduction-to-smooth-manifolds-by-john-lee",
           title: 'Introduction to Smooth Manifolds by John Lee',
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/lee/";
+              window.location.href = "/projects/lee.html";
             },},{id: "projects-real-and-complex-analysis-by-walter-rudin",
           title: 'Real and Complex Analysis by Walter Rudin',
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/papa_rudin/";
+              window.location.href = "/projects/papa_rudin.html";
             },},{id: "projects-calculus-on-manifolds-by-micahel-spivak",
           title: 'Calculus on Manifolds by Micahel Spivak',
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/spivak/";
+              window.location.href = "/projects/spivak.html";
             },},{id: "projects-template",
           title: 'Template',
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/template/";
-            },},{id: "teachings-data-science-fundamentals",
-          title: 'Data Science Fundamentals',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/data-science-fundamentals/";
+              window.location.href = "/projects/template.html";
             },},{
         id: 'social-cv',
         title: 'CV',
