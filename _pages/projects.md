@@ -9,6 +9,13 @@ display_categories: ["Textbook Solutions", "Coding", "Fun"]
 horizontal: false
 ---
 
+<!-- <style>
+  h2.category {
+    color: var(--global-theme-color);
+    opacity: 1;
+  }
+</style> -->
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
