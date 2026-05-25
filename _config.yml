@@ -8,7 +8,7 @@ last_name: Huter
 contact_note: >
   My personal email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Erik Huter, a mathematics student at Kansas State University (K-State). Explore my research in analysis, projects, CV, and more!
+  My name is Erik Huter, this is my personal website which holds information about me, my research, projects, CV, and more.
 author: Erik Huter
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.

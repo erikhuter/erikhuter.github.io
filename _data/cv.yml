@@ -1,18 +1,14 @@
 cv:
-  name: Erik Huter
-  label: Mathematics Major
-  email: huter.erik@gmail.com
-  location: Manhattan, KS
-  image: ""
-  summary: Summary
+  name: "Erik K. Huter"
+  location: "Manhattan, KS"
+  email: "huter.erik@gmail.com"
+  phone: "(316) 213-3850"
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: erikhuter
     - network: LinkedIn
-      username: example
+      username: erikhuter
 
   address:
     street: 1401 College Ave
@@ -25,15 +21,16 @@ cv:
       - institution: Kansas State University
         location: Manhattan, KS
         url: https://www.k-state.edu/
-        area: Mathematics
-        studyType: Bachelor's of Science
+        area: Mathematics, Statistics and Data Science
+        studyType: Bachelor of Science
         start_date: 2023
         end_date: 2027
         score: "4.00 GPA"
         courses: ""
         highlights:
-          - Description 1.
-          - Description 2.
+          - "GPA: 4.00/4.00"
+          - "University Honors Program"
+          - "Math Department Acting Ambassador, Math Club Officer"
 
       - institution: Derby High School
         location: Derby, KS
@@ -44,120 +41,120 @@ cv:
         end_date: 2023
         score: "4.00 GPA"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "GPA: 4.00/4.00"
+          - Kansas Governor Scholar
+          - "Recognized as the top mathematics student in the Class of 2023"
 
-    Experience:
-      - company: Summer Undergraduate Mathematics and Statistics Accelerator, Institue for Mathematical and Statistical Innovation
-        position: Student
-        location: Chicago, IL
-        start_date: 2023
-        end_date: 2023
-        summary: Participated in a 10-week summer program focused on research in mathematics and statistics
+    Research:
+      - company: Kansas State University
+        position: Undergraduate Researcher
+        location: Manhattan, KS
+        start_date: 2026
+        end_date: 2027
+        summary: "Undergraduate thesis research on fractional Sobolev spaces."
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Topic: Fractional Sobolev Spaces on Subsets of the Euclidean space"
+          - "Mentored by Dr. Lizaveta Ihnatsyeva to study definitions of fractional Sobolev spaces on closed subsets of the Euclidean space, particularly functions defined on lower-dimensional Ahlfors-regular sets"
+          - "The results for this project will constitute my undergraduate thesis"
+          - "Supported by K-State I-Center Undergraduate Scholarship, Department of Mathematics"
 
-    # Volunteer:
-    #   - company: People's Climate March
-    #     position: Lead Organizer
-    #     location: Zurich, Switzerland
-    #     start_date: 2014-04-01
-    #     end_date: 2015-07-01
-    #     summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-    #     highlights:
-    #       - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-    #       - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+    Work:
+      - company: Kansas State University Department of Mathematics
+        position: Student Grader
+        location: Manhattan, KS
+        start_date: 2025
+        end_date: present
+        summary: Graded various upper-division undergraduate courses in the mathematics department at Kansas State University.
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Worked closely with professors to grade upper-division undergraduate courses
+          - "Graded courses: Introduction to Modern Algebra, Introduction to Algebraic Systems, Elementary Differential Equations, Discrete Mathematics, Foundations of Analysis, Introduction to Linear Algebra, and Introduction to Number Theory"
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - company: "Private Tutoring"
+        position: "Mathematics and Statistics Tutor"
+        location: "Manhattan, KS"
+        start_date: "2024-05"
+        end_date: "present"
+        summary: Conducted private tutoring sessions in mathematics and statistics.
+        highlights:
+          - "Tutored students one-on-one in both online and in-person settings"
+          - "Taught various undergraduate-level subjects by collaborating with students to reach conceptual understanding"
+      - company: "Institute for Mathematical and Statistical Innovation, University of Chicago"
+        position: "Summer Undergraduate Mathematics and Statistics Accelerator"
+        location: "Chicago, IL"
+        start_date: "Jun."
+        end_date: " Aug. 2024"
+        summary: "Participated in an intensive eight-week program at IMSI to prepare students for the rigors of graduate school."
+        highlights:
+          - "Intensive eight-week program at IMSI designed to prepare students for graduate school"
+          - "Covered topics in abstract linear algebra, probability theory, real analysis, and linear regression"
+          - "Supported by the National Science Foundation"
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Additional Experience:
+      - name: "Putnam and KCMC Problem Solving Seminar"
+        location: "Kansas State University"
+        start_date: "2025-08"
+        end_date: "present"
+        highlights:
+          - "Regular attendee of the seminar designed to prepare students for the Putnam Exam and Kansas Collegiate Mathematics Competition"
+          - "Worked with faculty and students to provide solutions to various competition-level problems"
+      - name: "Open House Ambassador"
+        location: "Kansas State University Math Department"
+        date: "Spring 2026"
+        highlights:
+          - "Assisted with setup and operation of the K-State Open House for the mathematics department"
+          - "Advocated for the department to prospective students and university faculty"
+      - name: "Departmental Ambassador"
+        location: "Kansas State University Math Department"
+        date: "Fall 2025"
+        highlights:
+          - "Welcomed new undergraduate and graduate students to the math department"
+          - "Assisted a graduate teaching seminar by working as a mock student"
+      - name: "Directed Reading Project – Quaternions and Topology"
+        location: "Kansas State University"
+        date: "Fall 2024"
+        highlights:
+          - "Mentored by graduate student Jesse Osnes studying quaternions from a topological approach"
+          - "Studied introductory topological concepts, spin geometry, quaternion manifolds, and use cases in computer graphics"
+      - name: "Directed Reading Project – Mathematical Modeling"
+        location: "Kansas State University"
+        date: "Fall 2023"
+        highlights:
+          - "Mentored by Dr. Garrett Nelson studying tools used in time-series modeling"
+          - "Used R to implement and evaluate the efficacy of various models"
+
+    Recognition and Awards:
+      - bullet: "**University Scholar Award**, Kansas State University (2023–2027)"
+      - bullet: "**Sarah G. Sitz Math Scholarship**, K-State Dept. of Mathematics (2026–2027)"
+      - bullet: "**Leonard E. Fuller Scholarship**, K-State Dept. of Mathematics (2024–2026)"
+      - bullet: "**I-Center Undergraduate Scholar Award**, K-State Dept. of Mathematics (2026)"
+      - bullet: "**K-State Putnam Exam Award**, 2nd best scorer at K-State (2023)"
+      - bullet: "**K-State Putnam Exam Award**, best scorer at K-State (2024, 2025)"
+      - bullet: "**S. Thomas Parker Mathematical Competition**, 2nd Place (2024, 2025)"
+      - bullet: "**3rd Place, Kansas Collegiate Mathematics Competition**, MAA (2026)"
+      - bullet: "**Ronald and Rae Iman Scholarship in Statistics**, K-State Dept. of Statistics (2024)"
+      - bullet: "**Ray and Carolyn Waller Statistics Scholarship**, K-State Dept. of Statistics (2025)"
+      - bullet: "**Holly C. and E. Beth Fryer Statistics Scholarship**, K-State Dept. of Statistics (2026)"
+      - bullet: "**College of Arts and Sciences Scholarship**, Kansas State University (2023)"
+      - bullet: "**Leo and Louise Schlicher Best Scholarship**, Kansas State University (2023)"
+      - bullet: "**The Irvin R. Ricklefs Memorial Scholarship**, Kansas State University (2023)"
+      - bullet: "**K-State Semester Honors (7x)**, Kansas State University (2023–Present)"
+      - bullet: "**Passed Exam FM**, SOA (April 2025)"
+
+    Advanced Coursework:
+      - bullet: "**MATH 721**: Introduction to Real Analysis, Grade: A"
+      - bullet: "**MATH 821**: Real Analysis, Grade: tbd"
+      - bullet: "**MATH 723**: Complex Functions, Grade: A"
+      - bullet: "**MATH 882**: Differential Geometry, Grade: A"
+      - bullet: "**MATH 730/731**: Abstract Algebra I & II, Grade: tbd"
+      - bullet: "**MATH 770/771**: Introduction to Topology/Geometry I & II, Grade: tbd"
+      - bullet: "**STAT 610/611**: Mathematical Statistics I & II, Grade: A"
+      - bullet: "**STAT 770**: Theory of Statistics, Grade: tbd"
+      - bullet: "**MATH 512**: Introduction to Modern Algebra, Grade: A"
+      - bullet: "**MATH 560**: Introduction to Topology, Grade: A"
+      - bullet: "**MATH 500**: Mathematical Theory of Interest, Grade: A"
+
+    Technical Skills:
+      - label: "Languages"
+        details: "Python, SQL, R, SAS"
+      - label: "Software"
+        details: "LaTeX, Microsoft 365"

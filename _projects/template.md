@@ -3,7 +3,7 @@ layout: page
 title: Template
 description: Selected solutions for various questions from this book.
 img: #assets/img/image.png
-importance: #2 #This is the order of the project
+importance: #2 #This is the order in which projects appear
 category: #Textbook Solutions          #this is where the category goes
 related_publications: false
 mathjax: true
@@ -52,6 +52,8 @@ $
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
 \newcommand{\RP}{\operatorname{Re}}
 \newcommand{\IP}{\operatorname{Im}}
 \newcommand{\abs}[1]{\left| #1 \right|}

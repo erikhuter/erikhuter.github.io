@@ -6,19 +6,19 @@ nav: true
 nav_order: 3
 ---
 
-#### **Analysis on Metric Measure Spaces**
+##### **Analysis on Metric Measure Spaces**
 
-I am currently working with **Dr. Lizaveta Ihnatsyeva** on a project titled _Analysis on Metric Measure Spaces_.
+I am currently working with **Dr. Lizaveta Ihnatsyeva** on a project titled _Fractional Sobolev Spaces on Subsets of the Euclidean space_.
 
 The study of regularity and smoothness properties of functions is an essential part of mathematical analysis. Currently, the theory of smooth functions (in its generalized sense) has become an extensive, actively developing area.
 
-#### Motivation & Applications
+##### **Motivation & Applications**
 
-Fractional Sobolev spaces have been a classical topic in functional and harmonic analysis all along. These spaces and their corresponding nonlocal equations are employed in various disciplines, including: optimization problems** and minimal surfaces, thin obstacle problems in partial differential equations, soft thin films** in materials science, and Mathematical Finance and risk modeling.
+Fractional Sobolev spaces have been a classical topic in functional and harmonic analysis. These spaces and their corresponding nonlocal equations are employed in various disciplines, including: optimization problems on minimal surfaces, thin obstacle problems in partial differential equations, soft thin films in materials science, and mathematical finance and risk modeling.
 
 Sobolev functions and their fractional order versions are classically defined on the Euclidean space or its open subsets. However, current demand for analysis on fractals and graphs led to the development in the theory of Sobolev spaces defined on closed and irregular subsets of the Euclidean space, or, more generally, on metric measure spaces. For instance, several interesting fractals can be considered as metric spaces equipped with a doubling measure. Mostly because of its novelty and technical complexity, the corresponding theory of function spaces in this general setting is far from being settled, and presents many interesting open problems.
 
-#### Project Goals
+##### **Project Goals**
 
 The goal of the proposed project is to study possible definitions of fractional Sobolev spaces on closed subsets of the Euclidean space $\mathbb{R}^n$, in particular, functions defined on lower-dimensional Ahlfors-regular sets. One approach to this problem is to obtain intrinsic descriptions of the traces of fractional Sobolev spaces to subsets of $\mathbb{R}^n$.
 

@@ -52,6 +52,8 @@ $
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
 \newcommand{\RP}{\operatorname{Re}}
 \newcommand{\IP}{\operatorname{Im}}
 \newcommand{\abs}[1]{\left| #1 \right|}

@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: My projects.
+description: This page holds a repository of some of the projects I have worked on throughout my undergraduate studies. In particular, this page will host solutions to textbook exercises I am currently reading through or solutions to problems I find especially beautiful or clever.
 nav: true
 nav_order: 2
 display_categories: ["Textbook Solutions", "Coding", "Fun"]

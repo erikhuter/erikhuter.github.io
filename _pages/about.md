@@ -28,14 +28,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My name is Erik Huter. I am an undergraduate student at Kansas State University studying mathematics and statistics. I expect to graduate May 2027. Upon completion of my undergradute studies, I aspire to pursue a PhD in pure mathematics.
+My name is Erik Huter. I am an undergraduate student at Kansas State University studying mathematics and statistics. I expect to graduate in May 2027. Upon completion of my undergraduate studies, I aspire to pursue a PhD in pure mathematics.
 
-My summer reading list includes, and not partciularly in this order: Calculus on Manifold by Micahel Spivak, Smooth Manifolds by John Lee, Analysis on Metric Measure Spaces, Lectures on Analysis on Metric Spaces by Juha Heinonen, and Real and Complex Analysis by Walter Rudin. I have collected various solutions to exercises from these books (and other spots) here.
+My summer reading list includes, and not particularly in this order: Calculus on Manifolds by Michael Spivak, Smooth Manifolds by John Lee, Analysis on Metric Measure Spaces, Lectures on Analysis on Metric Spaces by Juha Heinonen, and Real and Complex Analysis by Walter Rudin. I have collected various solutions to exercises from these books (and various other problems) in my [projects](/_projects/) page.
 
-My research interests currently lie in real and complex analysis, but I am still young in my mathematical journey and look forward to exploring many other areas of mathematics.
+My research interests currently lie in real and complex analysis, but I am still young in my mathematical journey and look forward to exploring many other areas of mathematics. I am currently working on a project in geometric measure theory. For more information about my research, click [here](/research/).
 
-Other books/areas I am actively looking to study in introductory category theory, and a deeper dive into complex analysis. I welcome any and all reccomendations for textbooks in these subjects (or even others!).
+Other areas I am actively looking to learn about are introductory category theory and several variable complex analysis (or other further topics in complex analysis). I welcome any and all recommendations for textbooks in these subjects (or even others!).
 
-My hobbies and interests outside of mathematics include sports (Go Cats!), video games, and my two cats Snowflake and Fubini. I also enjoy the occasional rock climb.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+My hobbies and interests outside of mathematics include sports (Go Cats!), video games, rock climbing, and my two cats Snowflake and Fubini. I am an avid K-State fan and college sports enthusiast. In the moments I find myself with extra free time, I like to play Rocket League, Clash of Clans (practically maxed town hall 18), Valorant, and Minecraft.

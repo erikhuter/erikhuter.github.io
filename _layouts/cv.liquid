@@ -33,7 +33,7 @@ layout: default
       {% endif %}
     </h1>
     {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
+      <p class="post-description">{{ page.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     {% endif %}
   </header>
 
@@ -120,32 +120,10 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- RenderCV Sections - Merge Experience and Volunteer -->
-        {% comment %} First, combine Experience and Volunteer entries {% endcomment %}
-        {% assign empty_array = '' | split: ',' %}
-        {% assign exp = cv.sections.Experience | default: empty_array %}
-        {% assign vol = cv.sections.Volunteer | default: empty_array %}
-        {% assign combined_experience = exp | concat: vol %}
-        {% if combined_experience.size > 0 %}
-          <a class="anchor" id="experience"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
-            <div>
-              {% assign entries = combined_experience %}
-              {% include cv/experience.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        {% comment %} Now render all other sections except Experience and Volunteer {% endcomment %}
+        {% comment %} Render all sections in the order they appear in the YAML {% endcomment %}
         {% for section_pair in cv.sections %}
           {% assign section_title = section_pair[0] %}
           {% assign section_entries = section_pair[1] %}
-
-          {% comment %} Skip Experience and Volunteer as we've already processed them combined {% endcomment %}
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
-            {% continue %}
-          {% endif %}
 
           <a class="anchor" id="{{ section_title | slugify }}"></a>
           <div class="card mt-3 p-3">
@@ -154,6 +132,9 @@ layout: default
               {% if section_title == 'Education' %}
                 {% assign entries = section_entries %}
                 {% include cv/education.liquid %}
+              {% elsif section_title == 'Experience' or section_title == 'Work' or section_title == 'Research' or section_title == 'Volunteer' %}
+                {% assign entries = section_entries %}
+                {% include cv/experience.liquid %}
               {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
                 {% assign entries = section_entries %}
                 {% include cv/awards.liquid %}
@@ -172,7 +153,7 @@ layout: default
               {% elsif section_title == 'Certificates' %}
                 {% assign entries = section_entries %}
                 {% include cv/certificates.liquid %}
-              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
+              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' or section_title == 'Additional Experience' %}
                 {% assign entries = section_entries %}
                 {% include cv/projects.liquid %}
               {% elsif section_title == 'References' %}
@@ -180,17 +161,17 @@ layout: default
                 {% include cv/references.liquid %}
               {% else %}
                 <!-- Generic section -->
-                {% for entry in section_entries %}
-                  {% if entry.bullet %}
-                    <ul class="card-text font-weight-light list-group list-group-flush">
+                <ul class="card-text font-weight-light list-group list-group-flush">
+                  {% for entry in section_entries %}
+                    {% if entry.bullet %}
                       <li class="list-group-item">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                    </ul>
-                  {% elsif entry.label %}
-                    <div class="card-text font-weight-light">
-                      <strong>{{ entry.label }}:</strong> {{ entry.details }}
-                    </div>
-                  {% endif %}
-                {% endfor %}
+                    {% elsif entry.label %}
+                      <li class="list-group-item">
+                        <strong>{{ entry.label }}:</strong> {{ entry.details }}
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
               {% endif %}
             </div>
           </div>
@@ -388,5 +369,9 @@ layout: default
         <p>No CV data found. Please configure either RenderCV (cv.yml) or JSONResume (resume.json) data.</p>
       {% endif %}
     </div>
+
+    {% if content %}
+      {{ content }}
+    {% endif %}
   </article>
 </div>

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Example Questions and Solutions
-description: Selected solutions for various example questions.
+title: Other Questions and Solutions
+description: Selected solutions to various questions I find interesting or elegant.
 img: #assets/img/magnify.png
-importance: 1
+importance: 6
 category: Textbook Solutions
 related_publications: false
 mathjax: true
@@ -51,6 +51,8 @@ $
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
 \newcommand{\RP}{\operatorname{Re}}
 \newcommand{\IP}{\operatorname{Im}}
 \newcommand{\abs}[1]{\left| #1 \right|}
@@ -80,14 +82,14 @@ $
 </details>
 
 <div class="question-block">
-  <span class="question-label">Exercise 1.2</span>
-  Question for exercise 1.2 goes here.
+  <span class="question-label">1989 Putnam Exam B4</span>
+  Does there exist an uncountable set of subsets of postive integers such that any two distinct subsets have finite intersection?
 </div>
 
 <details class="proof-dropdown">
   <summary>Proof</summary>
   <div class="proof-content">
-    Proof content for exercise 1.2 goes here...
+    Yes! Consider the subset  $(0,1)$ of $\R$ (any interval will work). Now, for each $x \in (0,1)$, there exists a sequence of rationals converging to $x$ (by the definiton of the reals). Denote a sequence converging to $x$ by $(x_n)$. Now for each $x \in (0,1)$, take exactly one sequence converging to $x$. Let $S$ be the set of the ranges of these sequences (Axiom of Choice!). $S$ is uncountable because $(0,1)$ is uncountable. Furthermore, we claim the intersection of any two elements of $S$ is finite. This is because for any $\{x_n\}, \{y_n\} \in S$, we know they converge to distinct reals, call them $x,y \in (0,1)$ respectively. Now, let $\varepsilon = \abs{x - y} / 2$, then by defintion of convergence there exists a $N \in \N$ such that both $\abs{x_n - x} < \varepsilon$ and $\abs{y_n-y} < \varepsilon$ $\forall n \geq N$. That is, there is only finite $x_n$ and $y_n$ that can potentially intersect (since $(x- \varepsilon, x + \varepsilon) \cap (y - \varepsilon, y + \varepsilon) = \emptyset$). So, $S$ is uncountable and the intersection of any two elements of $S$ is finite. Finally, since $\Q$ is countable, take a bijection $f: \Q \to \N^+$ and apply it to every rational number in a range of $S$ and call this new set of "ranges" $S^*$. That is, $S^* = \{ f(\{x_n\}) \mid {x_n} \in S\}$ where $f(\{x_n\})$ is understood to be the application of $f$ to each $x_n$. $f$ is a bijection so both the pairwise finite intersection property and uncountability of $S$ are preserved, thus $S^*$ gives the desired result.
     <div align="right">$\qed$</div>
   </div>
 </details>
