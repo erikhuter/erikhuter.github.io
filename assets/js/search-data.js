@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "My projects.",
+          description: "This page holds a repository of some of the projects I have worked on throughout my undergraduate studies. In particular, this page will host solutions to textbook exercises I am currently reading through or solutions to problems I find especially beautiful or clever.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -25,14 +25,14 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Undergraduate Teaching Assistant.",
+          description: "Undergraduate Teaching Assistant",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Here is a website accessible version of my CV. For a PDF format, navigate back to the homepage and click the &quot;CV&quot; icon in the top right. ** Note, this CV is unfinished. **",
+          description: "This is a web accessible version of my CV. For a PDF format, navigate back to the homepage and click the **CV** icon in the top left or click [here](/assets/pdf/Huter_CV.pdf).",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -44,12 +44,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photos/";
           },
-        },{id: "projects-example-questions-and-solutions",
-          title: 'Example Questions and Solutions',
-          description: "Selected solutions for various example questions.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/example.html";
-            },},{id: "projects-lectures-on-analysis-on-metric-spaces-by-juha-heinonen",
+        },{id: "projects-lectures-on-analysis-on-metric-spaces-by-juha-heinonen",
           title: 'Lectures on Analysis on Metric Spaces by Juha Heinonen',
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
@@ -59,6 +54,11 @@ ninja.data = [{
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/lee.html";
+            },},{id: "projects-other-questions-and-solutions",
+          title: 'Other Questions and Solutions',
+          description: "Selected solutions to various questions I find interesting or elegant.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/other.html";
             },},{id: "projects-real-and-complex-analysis-by-walter-rudin",
           title: 'Real and Complex Analysis by Walter Rudin',
           description: "Selected solutions for various questions from this book.",
