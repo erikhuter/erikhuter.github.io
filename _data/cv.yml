@@ -1,20 +1,14 @@
 cv:
   name: "Erik K. Huter"
-  location: "Manhattan, KS"
+  location: "1401 College Ave, Manhattan, KS 66502"
   email: "huter.erik@gmail.com"
-  phone: "(316) 213-3850"
+  phone: "+1 316 213 3850"
 
   social_networks:
     - network: GitHub
       username: erikhuter
     - network: LinkedIn
       username: erikhuter
-
-  address:
-    street: 1401 College Ave
-    city: Manhattan
-    region: Kansas
-    postalCode: 66502
 
   sections:
     Education:
@@ -50,7 +44,7 @@ cv:
         position: Undergraduate Researcher
         location: Manhattan, KS
         start_date: 2026
-        end_date: 2027
+        end_date: present
         summary: "Undergraduate thesis research on fractional Sobolev spaces."
         highlights:
           - "Topic: Fractional Sobolev Spaces on Subsets of the Euclidean space"
@@ -63,7 +57,7 @@ cv:
         position: Student Grader
         location: Manhattan, KS
         start_date: 2025
-        end_date: present
+        end_date: "present"
         summary: Graded various upper-division undergraduate courses in the mathematics department at Kansas State University.
         highlights:
           - Worked closely with professors to grade upper-division undergraduate courses
@@ -73,7 +67,7 @@ cv:
         position: "Mathematics and Statistics Tutor"
         location: "Manhattan, KS"
         start_date: "2024-05"
-        end_date: "present"
+        end_date: present
         summary: Conducted private tutoring sessions in mathematics and statistics.
         highlights:
           - "Tutored students one-on-one in both online and in-person settings"
@@ -81,8 +75,8 @@ cv:
       - company: "Institute for Mathematical and Statistical Innovation, University of Chicago"
         position: "Summer Undergraduate Mathematics and Statistics Accelerator"
         location: "Chicago, IL"
-        start_date: "Jun."
-        end_date: " Aug. 2024"
+        start_date: 2024-06
+        end_date: 2024-08
         summary: "Participated in an intensive eight-week program at IMSI to prepare students for the rigors of graduate school."
         highlights:
           - "Intensive eight-week program at IMSI designed to prepare students for graduate school"
