@@ -36,4 +36,6 @@ My research interests currently lie in real and complex analysis, but I am still
 
 Other areas I am actively looking to learn about are introductory category theory and several variable complex analysis (or other further topics in complex analysis). I welcome any and all recommendations for textbooks in these subjects (or even others!).
 
+In the Fall 2026 semester, I am taking Abstract Algebra I (Math 730), Introduction to Topology/Geometry I (Math 770), and Real Analysis (Math 821). Next semester, Spring 2027, I plan to take Abstract Algebra II (Math 731), Introduction to Topology/Geometry II (Math 771), and hopefully another analysis class.
+
 My hobbies and interests outside of mathematics include sports (Go Cats!), video games, rock climbing, and my two cats Snowflake and Fubini. I am an avid K-State fan and college sports enthusiast. In the moments I find myself with extra free time, I like to play Rocket League, Clash of Clans (practically maxed town hall 18), Valorant, and Minecraft.
