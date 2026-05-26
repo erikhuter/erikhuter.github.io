@@ -30,7 +30,7 @@ latest_posts:
 
 My name is Erik Huter. I am an undergraduate student at Kansas State University studying mathematics and statistics. I expect to graduate in May 2027. Upon completion of my undergraduate studies, I aspire to pursue a PhD in pure mathematics.
 
-My summer reading list includes, and not particularly in this order: Calculus on Manifolds by Michael Spivak, Smooth Manifolds by John Lee, Analysis on Metric Measure Spaces, Lectures on Analysis on Metric Spaces by Juha Heinonen, and Real and Complex Analysis by Walter Rudin. I have collected various solutions to exercises from these books (and various other problems) in my [projects](/_projects/) page.
+My summer reading list includes, and not particularly in this order: Calculus on Manifolds by Michael Spivak, Smooth Manifolds by John Lee, Analysis on Metric Measure Spaces, Lectures on Analysis on Metric Spaces by Juha Heinonen, and Real and Complex Analysis by Walter Rudin. I have collected various solutions to exercises from these books (and various other problems) in my [projects](/projects/) page.
 
 My research interests currently lie in real and complex analysis, but I am still young in my mathematical journey and look forward to exploring many other areas of mathematics. I am currently working on a project in geometric measure theory. For more information about my research, click [here](/research/).
 
