@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Undergraduate Teaching Assistant",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -54,11 +54,11 @@ ninja.data = [{
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/lee.html";
-            },},{id: "projects-other-questions-and-solutions",
-          title: 'Other Questions and Solutions',
+            },},{id: "projects-miscellaneous-problems",
+          title: 'Miscellaneous Problems',
           description: "Selected solutions to various questions I find interesting or elegant.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/other.html";
+              window.location.href = "/projects/misc.html";
             },},{id: "projects-real-and-complex-analysis-by-walter-rudin",
           title: 'Real and Complex Analysis by Walter Rudin',
           description: "Selected solutions for various questions from this book.",
@@ -69,11 +69,6 @@ ninja.data = [{
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/spivak.html";
-            },},{id: "projects-template",
-          title: 'Template',
-          description: "Selected solutions for various questions from this book.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template.html";
             },},{
         id: 'social-cv',
         title: 'CV',
