@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Undergraduate Teaching Assistant
+# description: Undergraduate Teaching Assistant
 nav: true
 nav_order: 4
 calendar: true
