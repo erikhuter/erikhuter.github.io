@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "",
+          description: "This page holds some information about my current research.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "",
+          description: "This page holds some information about my teaching for the current semester.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
