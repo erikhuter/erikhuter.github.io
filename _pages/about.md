@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+description: My name is Erik Huter, this is my personal website which holds information about me, my research, projects, CV, and more.
 permalink: /
 subtitle: <a href="mailto:huter.erik@gmail.com"> huter.erik@gmail.com </a> &ensp; | &ensp; <a href="mailto:erikhuter@ksu.edu"> erikhuter@ksu.edu </a>
 

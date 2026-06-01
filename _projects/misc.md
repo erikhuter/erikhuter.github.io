@@ -6,6 +6,7 @@ img: #assets/img/magnify.png
 importance: 6
 category: Textbook Solutions
 related_publications: false
+sitemap: false
 mathjax: true
 ---
 

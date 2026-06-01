@@ -5,6 +5,8 @@ title: Teaching
 # description: Undergraduate Teaching Assistant
 nav: true
 nav_order: 4
+description: This page holds some information about my teaching for the current semester.
+sitemap: false
 calendar: true
 ---
 

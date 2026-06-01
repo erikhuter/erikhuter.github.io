@@ -228,20 +228,16 @@
 
   <script type="application/ld+json">
     {
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}"
-        },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks | jsonify }},
-        {% endif %}
-        "name": "{{ author_name }}",
-        "@context": "https://schema.org"
+      "@context": "https://schema.org",
+      "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
+      "name": "Erik Huter",
+      "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+      "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}",
+      "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+      "author": {
+        "@type": "Person",
+        "name": "Erik Huter"
+      }
     }
   </script>
 {% endif %}

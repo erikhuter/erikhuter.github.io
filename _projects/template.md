@@ -7,6 +7,7 @@ importance: #2 #This is the order in which projects appear
 category: #Textbook Solutions          #this is where the category goes
 related_publications: false
 mathjax: true
+sitemap: false
 published: false #REMOVE THIS LINE WHEN IMPLEMENTING A NEW PROJECT
 ---
 
