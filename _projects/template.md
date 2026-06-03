@@ -48,6 +48,9 @@ published: false #REMOVE THIS LINE WHEN IMPLEMENTING A NEW PROJECT
    background-color: var(--global-bg-color);
    border: 1px solid var(--global-divider-color);
  }
+ .text-theme {
+    color: var(--global-theme-color) !important;
+ }
 </style>
 
 $
