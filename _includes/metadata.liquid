@@ -226,18 +226,80 @@
     {% endcase %}
   {% endfor %}
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-      "name": "Erik Huter",
-      "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-      "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}",
-      "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-      "author": {
-        "@type": "Person",
-        "name": "Erik Huter"
+  {% if is_blog_post %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "name": "Erik Huter",
+        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+        "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}",
+        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+        "author": {
+          "@type": "Person",
+          "name": "Erik Huter"
+        }
       }
-    }
-  </script>
+    </script>
+  {% elsif page.url == '/' or page.url == '/index.html' %}
+    <!-- Organization + Person schema for homepage with sitelinks -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Erik Huter",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "description": "{{ site.description }}",
+        "image": "{{ site.og_image | prepend: site.url | prepend: site.baseurl }}",
+        "sameAs": [
+          {% for link in sameaslinks %}
+            "{{ link }}"{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ],
+        "jobTitle": "Mathematician",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Kansas State University"
+        }
+      }
+    </script>
+    <!-- Organization schema for sitelinks -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "{{ site.title }}",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "description": "{{ site.description }}",
+        "image": "{{ site.og_image | prepend: site.url | prepend: site.baseurl }}",
+        "founder": {
+          "@type": "Person",
+          "name": "Erik Huter"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  {% else %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "{{ page.title | default: site.title }}",
+        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+        "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "{{ site.title }}",
+          "url": "{{ site.url }}{{ site.baseurl }}"
+        }
+      }
+    </script>
+  {% endif %}
 {% endif %}
