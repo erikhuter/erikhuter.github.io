@@ -69,7 +69,7 @@ $
 
 <div class="question-block">
   <span class="question-label">Theorem 1.2 (5r covering lemma)</span>
-  Every family $\mathcal F$ of balls of uniformly bounded diameter in a metric space $X$ contains a disjointed subfamily $\mathcal G$ such that.
+  Every family $\mathcal F$ of balls of uniformly bounded diameter in a metric space $X$ contains a disjoint subfamily $\mathcal G$ such that.
   $$
   \bigcup_{B \in \mathcal F} B \subset \bigcup_{B \in \mathcal G} 5B.
   $$
@@ -100,5 +100,94 @@ $
 
     <div align="right">$\qed$</div>
 
+  </div>
+</details>
+
+<div class="question-block">
+  <span class="question-label">Lemma for Theorem 1.6</span>
+  Prove that a doubling metric measure space is separable.
+  <br>
+  <br>
+  In the proof of Theorem 1.6 (Vitali covering theorem), it is asserted without proof that the subfamily $\mathcal G$ is necessarily countable. Separability proves this assertion for both the bounded and unbounded case (proven in the last paragraph).
+</div>
+
+<details class="proof-dropdown">
+  <summary>Proof</summary>
+  <div class="proof-content">
+    Let $(X, d, \mu)$ be a doubling metric measure space. First I claim that any ball $B(x_0, r) \subset X$ can be covered by finite balls of radius $r/2$ in a doubling measure. Let $C(\mu) = C$ be the doubling constant. Consider a set $S \subset B(x_0, r)$ with the following properties: 
+    $$
+    \begin{align}
+      \text{if $x, y \in B(x_0, r)$ are distinct, then $d(x, y) \geq r/2$} \\
+      \text{$\forall z \in B(x_0, r)$, $\exists x \in S$ such that $d(x,z) < r/2$}.
+    \end{align}
+    $$
+    The second property can hold because if it didn't, then there is some $y \in B(r)$ that is not within $r/2$ of any point in $S$. Thus it can be added to $S$ without breaking the first condition. Now, we prove some more properties about S. By property (1), we can see
+    $$
+    \begin{align}
+      \text{$\forall x, y \in S$, the balls $B(x, r/4)$ and $B(y, r/4)$ are disjoint}.
+    \end{align}
+    $$
+    Furthermore, an application of the triangle inequality shows 
+    $$
+      \begin{align}
+        B(x, r/4) \subset B(x_0, 2r) \subset B(x, 4r).
+      \end{align}
+    $$
+    Lastly, applying the doubling constant four times results in 
+    $$
+      \begin{align}
+        C^{-4} \mu \p{B(x, 4r)} \leq \mu \p{B(x, r/4)}.
+      \end{align}
+    $$
+    From (4) we see
+    $$
+    \begin{align}
+      \bigcup_{x \in S} B(x, r/4) \subset B(x_0, 2r) \implies \sum_{x \in S} \mu \p{B(x, r/4)} \leq \mu \p{B(x_0, 2r)}
+    \end{align}
+    $$
+    and the implication follows due to disjointness (3). 
+    Finally, we can see
+    $$
+    \begin{align*}
+      \mu \p{B(x_0, 2r)} \overset{(6)}{\geq} \sum_{x \in S} \mu \p{B(x, r/4)} \overset{(5)}{\geq} C^{-4} \sum_{x \in S} \mu \p{B(x, 4r)} \overset{(4)}{\geq} \abs S C^{-4} \mu{\p{B(x_0, 2r)}} \\
+      \implies \abs{S} \leq C^{4}
+    \end{align*}
+    $$
+    Recall $S$ was the set of points in $B(x_0, r)$ that had properties (1) and (2). Thus, any arbitrary ball of radius $r$ in $X$ can be covered by $C^4$ or less balls of radius $r/2$.
+    <br>
+    <br>
+    Next I claim any ball, $B(x_0, r)$, is separable. We will construct a set which is dense in $B(x_0, r)$ by covering it in a finite number of balls of radius $r/2$, then we will cover each of these balls by balls of radius $r/4$ and so on. Consider the collection of all the centers of these balls. This set is countable because it is the union of countable amount of finite sets. Furthermore, by our construction, any $x \in B(x_0, r)$ must be in a ball of radius $r/2^n$ for all $n \geq 0$. Thus, since $r/2^n \to 0$ as $n \to \infty$, we can see that $B(x_0, r)$ is separable.
+    <br>
+    <br>
+    Finally, we are ready to prove $X$ is separable. Let $x_0 \in X$, the key is notice $X = \bigcup_{n=0}^\infty B(x_0, n)$. Each of these balls is separable, so take the dense subset of each of these balls and call it $D_n$. Then the set
+    $$
+    D = \bigcup_{n=0}^\infty D_n
+    $$
+    is countable because it is the countable union of countable sets. It is also dense in $X$ because any point $x \in X$ there is a $N$ such that $x \in B(x_0, N)$ and a sequence of points converging to $x$ in $D_n \subset D$. $X$ is separable.
+    <br>
+    <br> 
+    To prove that the subfamily $\mathcal G$ is necessarily countable, suppose it isn't. It is a disjoint family, so each $B \in \mathcal G$ has a unique point which must be in the dense set $D$, but this would suggest $D$ is uncountable.
+    <div align="right">$\qed$</div>
+  </div>
+</details>
+
+<div class="question-block">
+  <span class="question-label">Theorem 1.6 (Vitali covering theorem): The Unbounded Case</span>
+  It was left to the reader to prove Vitali's covering theorem for $A$ when $A$ is unbounded.
+</div>
+
+<details class="proof-dropdown">
+  <summary>Proof</summary>
+  <div class="proof-content">
+    Let $(X, d, \mu)$ be a doubling metric space. Assume the radii of $\mathcal F$ are less than $1$. Let $\mathcal G \subset \mathcal F$ be the subfamily obtained from applying the 5R covering lemma (it is countable because $X$ is separable as shown in the previous proof). Define
+    $$
+        N= A \mathbin{\big\backslash} \bigcup_{B \in \mathcal G} B.
+    $$
+    Let $x_0 \in X$ Also, notate $N_k = N \cap B(x_0,k)$ for $k \in \N^+$. We now have $N_k \subset N_{k+1} \subset N$ for all $k \in \N^+$ and 
+    $$
+    \bigcup_{n=1}^\infty N_k = N.
+    $$
+    It now remains to show that $\mu (N_k) = 0$ for each $k$ because $\mu(N_k) \to \mu(N)$ as $k \to \infty$ (Baby Rudin Theorem 11.3 for those curious). Restrict the subfamily $\mathcal G$ to just the balls that intersect $B(x_0, k)$ and call this new subfamily $\mathcal G_k$. The rest of the proof given in the bounded case now applies to $\mathcal G_k$ and $N_k$ showing that $\mu \p{N_k} =0$ and thus $\mu \p N = 0$ and the unbounded case is proven.
+  <div align="right">$\qed$</div>
   </div>
 </details>
