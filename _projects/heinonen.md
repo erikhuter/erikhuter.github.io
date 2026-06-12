@@ -159,7 +159,7 @@ $
     Next I claim any ball, $B(x_0, r)$, is separable. We will construct a set which is dense in $B(x_0, r)$ by covering it in a finite number of balls of radius $r/2$, then we will cover each of these balls by balls of radius $r/4$ and so on. Consider the collection of all the centers of these balls. This set is countable because it is the union of countable amount of finite sets. Furthermore, by our construction, any $x \in B(x_0, r)$ must be in a ball of radius $r/2^n$ for all $n \geq 0$. Thus, since $r/2^n \to 0$ as $n \to \infty$, we can see that $B(x_0, r)$ is separable.
     <br>
     <br>
-    Finally, we are ready to prove $X$ is separable. Let $x_0 \in X$, the key is notice $X = \bigcup_{n=0}^\infty B(x_0, n)$. Each of these balls is separable, so take the dense subset of each of these balls and call it $D_n$. Then the set
+    Finally, we are ready to prove $X$ is separable. Let $x_0 \in X$, the key is to notice $X = \bigcup_{n=0}^\infty B(x_0, n)$. Each of these balls is separable, so take the dense subset of each of these balls and call it $D_n$. Then the set
     $$
     D = \bigcup_{n=0}^\infty D_n
     $$
