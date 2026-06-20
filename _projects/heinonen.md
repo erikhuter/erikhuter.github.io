@@ -3,7 +3,7 @@ layout: page
 title: Lectures on Analysis on Metric Spaces by Juha Heinonen
 description: Selected solutions for various questions from this book.
 img: #assets/img/root2.png
-importance: 4
+importance: 1
 category: Textbook Solutions #this is where the category goes
 related_publications: false
 sitemap: false
@@ -189,5 +189,77 @@ $
     $$
     It now remains to show that $\mu (N_k) = 0$ for each $k$ because $\mu(N_k) \to \mu(N)$ as $k \to \infty$ (Baby Rudin Theorem 11.3 for those curious). Restrict the subfamily $\mathcal G$ to just the balls that intersect $B(x_0, k)$ and call this new subfamily $\mathcal G_k$. The rest of the proof given in the bounded case now applies to $\mathcal G_k$ and $N_k$ showing that $\mu \p{N_k} =0$ and thus $\mu \p N = 0$ and the unbounded case is proven.
   <div align="right">$\qed$</div>
+  </div>
+</details>
+
+##### Chapter 2: Maximal Functions
+
+<div class="question-block">
+  <span class="question-label">Exercise 2.10</span>
+  Suppose $\mathcal B = \{ B_1, B_2, \dots\}$ is a countable collection of balls in a doubling space $(X, \mu)$ and that $a_i \geq 0$ are real numbers. Show that
+    $$
+    \int_X \p{\sum_\mathcal B a_i \chi_{\lambda B_i}}^p d \mu \leq C (\lambda, p, \mu) \int_X \p{\sum_{\mathcal B} a_i \chi_{B_i}}^p d \mu
+    $$
+    for $1< p <\infty$ and $\lambda >1$.
+</div>
+
+<details class="proof-dropdown">
+  <summary>Proof</summary>
+  <div class="proof-content">
+    Let  $B_i = B(x_i, r_i)$, $B_y = B(y, (\lambda +1 )r_i)$, and
+    $$
+    T_\lambda(x) = \sum_{\mathcal B} a_i \chi_{\lambda B_i}(x).
+    $$
+    First, $\lambda B_i \subset B_y$  since if $z \in \lambda B_i$ then $d(z,y) \leq d(z, x_i) + d(x_i,y) \leq r_i + \lambda r_i$. Let $g \geq 0$, then for each $y \in B_i$ we have
+    $$
+    \frac{1}{\mu (B_y)} \int_{\lambda B_i} g \, d\mu \leq  \frac{1}{ \mu( B_y)} \int_{B_y} g \, d\mu \leq M(g)(y)
+    $$
+    $$
+    \implies \int_{\lambda B_i} g \, d\mu \leq \mu(B_y) M(g)(y) \leq C(\lambda+2)\mu(B_i) M(g)(y).
+    $$
+    where the last inequality follows since $B_y \subset B(x_i, (\lambda +2 )r_i)$. Notice the left side doesn't depend on $y$ so integrate both sides to finally find
+    $$
+    \begin{align*}
+        \frac{1}{\mu (B_i)} \int_{B_i} \p{ \int_{\lambda  B_i} g \, d \mu} d\mu = \int_{\lambda B_i} g \, d \mu \leq C(\lambda+2) \int_{B_i}  M(g) \, d\mu. \tag{1}
+    \end{align*}
+    $$
+    Next, for any $f \geq 0$, we have
+    $$
+    \begin{align*}
+        \int_X T_\lambda f \,d\mu = \sum_{i} a_i \int_{\lambda B_i} f \, d\mu \tag{2}
+    \end{align*}
+    $$
+    which follows from the construction of $T_\lambda$. 
+    Combining these inequalities we find 
+    $$
+    \int _X T_{\lambda}g \, d\mu 
+    \overset{(2)}{=}
+    \sum_i a_i\int_{\lambda B_i} g \, d \mu  
+    \overset{(1)}{\leq}  C(\lambda) \sum a_i  \int_{B_i} M(g) \, d \mu 
+    \overset{(2)}{\leq} C(\lambda) \int_X T_1 M(g) \, d \mu
+    $$
+    Let $q$ be such that $1/p + 1/q = 1$, the Riesz Representation Theorem tells us
+    $$
+    \abs{\abs{ T_\lambda }}_{L^p} = \abs{\abs{ \int_X T_\lambda ( \_ ) }}_{(L^p)^*} = \sup_{\abs {\abs g}_{L^q} \leq 1} \abs{\int_X T_\lambda g \, d\mu}.
+    $$
+    From the inequality we showed above, Holder's inequality, the maximal function theorem, and $\abs{\abs g}_{L^q} \leq 1$ we find
+    $$
+    \begin{align*}
+    \int _X T_{\lambda}g \, d\mu  
+    & \leq C(\lambda) \int_X T_1 M(g) \, d \mu \\
+    & \leq C(\lambda)\abs{\abs {T_1}}_{L^p} \abs{\abs{M(g)}}_{L_q}  \\
+    & \leq  C(\lambda) C(p)  \abs{\abs {T_1}}_{L^p} \abs{\abs{g}}_{L_q}  \\
+    & \leq C(\lambda, p) \abs{\abs{T_1}}_{L^p}. 
+    \end{align*}
+    $$
+    Thus, from the Riesz Representation Theorem we find 
+    $$
+    \abs{\abs{ T_\lambda }}_{L^p} \leq C(\lambda, p) \abs{\abs{T_1}}_{L^p}
+    $$
+    giving us the final result
+    $$
+    \int_X \p{\sum_\mathcal B a_i \chi_{\lambda B_i}}^p d \mu \leq C (\lambda, p, \mu) \int_X \p{\sum_{\mathcal B} a_i \chi_{B_i}}^p d \mu.
+    $$
+    <div align="right">$\qed$</div>
   </div>
 </details>
