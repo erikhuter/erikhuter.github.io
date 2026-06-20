@@ -3,7 +3,7 @@ layout: page
 title: Miscellaneous Problems
 description: Selected solutions to various questions I find interesting or elegant.
 img: #assets/img/magnify.png
-importance: 6
+importance: 2
 category: Textbook Solutions
 related_publications: false
 sitemap: false
