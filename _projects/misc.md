@@ -6,7 +6,7 @@ img: #assets/img/magnify.png
 importance: 2
 category: Textbook Solutions
 related_publications: false
-sitemap: false
+sitemap: true
 mathjax: true
 ---
 
