@@ -6,7 +6,7 @@ title: Teaching
 nav: true
 nav_order: 4
 description: This page holds some information about my teaching for the current semester.
-sitemap: false
+sitemap: true
 calendar: true
 ---
 

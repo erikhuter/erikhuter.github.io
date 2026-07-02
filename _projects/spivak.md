@@ -6,7 +6,7 @@ img: #assets/img/spivak.jpg
 importance: 2
 category: Textbook Solutions #this is where the category goes
 related_publications: false
-sitemap: false
+sitemap: true
 mathjax: true
 ---
 

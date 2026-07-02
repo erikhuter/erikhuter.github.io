@@ -14,7 +14,7 @@ author: Erik Huter
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: "Erik Huter, Erik Huter math, Erik Huter K-State, Erik Huter research, Kansas State University mathematics, pure mathematics portfolio, analysis, Sobolev spaces, geometric measure theory, complex analysis, potential theory, academic CV math PhD"
+keywords: "Erik Huter, Erik Huter math, Erik Huter K-State, Erik Huter research, Kansas State University mathematics, pure mathematics portfolio, analysis, Sobolev spaces, geometric measure theory, complex analysis, academic CV math PhD"
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: books.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -134,6 +134,7 @@ exclude:
   - vendor
   - .github/agents/
   - assets/js/distillpub/
+  - assets/plotly/
   - _site/
   - README.md # Optional: the main template README isn't needed for the live site
 
@@ -161,6 +162,17 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
+
+# Jekyll Sitemap plugin configuration - excludes files from sitemap
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+  - scope:
+      path: "assets/pdf"
+    values:
+      sitemap: false
 
 sass:
   style: compressed

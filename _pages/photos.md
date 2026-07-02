@@ -4,7 +4,7 @@ title: Photos
 permalink: /photos/
 description: This is a collection of some of my favorite pictures.
 nav: true
-sitemap: false
+sitemap: true
 nav_order: 6
 ---
 

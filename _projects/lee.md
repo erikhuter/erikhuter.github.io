@@ -6,7 +6,7 @@ img: #assets/img/root2.png
 importance: 3
 category: Textbook Solutions #this is where the category goes
 related_publications: false
-sitemap: false
+sitemap: true
 mathjax: true
 ---
 
