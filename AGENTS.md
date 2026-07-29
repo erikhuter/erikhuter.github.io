@@ -7,6 +7,7 @@ A simple, clean, and responsive Jekyll theme for academics.
 - **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
 - **Customizing the site?** → See [`.github/agents/customize.agent.md`](.github/agents/customize.agent.md)
 - **Writing documentation?** → See [`.github/agents/docs.agent.md`](.github/agents/docs.agent.md)
+
 <!-- - **Need setup/deployment help?** → [INSTALL.md](INSTALL.md)
 - **Troubleshooting & FAQ?** → [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 - **Customization & theming?** → [CUSTOMIZE.md](CUSTOMIZE.md)
