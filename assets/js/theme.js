@@ -323,7 +323,7 @@ let getCalendarUrl = (calendarId, timezone = "UTC") => {
   const params = new URLSearchParams({
     src: calendarId,
     ctz: timezone,
-    mode: "WEEK",
+    mode: "MONTH",
     showTitle: "0",
     showPrint: "0",
     showCalendars: "0",
