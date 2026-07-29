@@ -251,7 +251,7 @@ $
         &= \mu(X) + 2C(\mu) \int_{X} \abs f\left( \log 2 + \log( 2 + \abs f ) \right) \, d \mu  \\
         &= \mu(X) + 2C(\mu) \p{ \log 2 \int_{X} \abs f \, d \mu  + \int_{X} \abs f \log( 2 + \abs f ) \, d \mu } < + \infty
     \end{align*}$$
-    where the last step is justified because $\log 2 \cdot \abs f \leq \abs f \log(2 + \abs f)$ which is finite by assumption.
+    where the last step is justified because for $x \geq 0$, $\log 2 \cdot  x \leq \abs f \log(2 + x)$, which is finite by assumption.
     <br>
     <br>
     $(\implies )$ The other direction is trickier and was proven by Stein in the $\R^n$ case in <a href="https://eudml.org/doc/217366">Note on the class $L \log L$</a>.
