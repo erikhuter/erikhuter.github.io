@@ -195,6 +195,72 @@ $
 ##### Chapter 2: Maximal Functions
 
 <div class="question-block">
+  <span class="question-label">Exercise 2.9</span>
+  Prove $M(f)$ is never Lebesgue integrable in $\R^n$ unless $f \equiv 0$. Next, show that if $\mu (X)$ is finite, then $M(f) \in L^1(X) \iff \abs f \log (2 + \abs f) \in L^1(X)$.
+</div>
+
+<details class="proof-dropdown">
+  <summary>Proof</summary>
+  <div class="proof-content">
+        Assume $f \not \equiv 0$ in the almost everywhere sense, and let $R>0$ such that $f$ is non-zero on a set of positive measure inside $B(0,R)$. Observe $B(0, R) \subset B(x, \abs x + R)$ for any $x \in \R^n$. Thus,
+    $$\begin{align*}
+        M(f)(x) 
+        &= \sup_{r > 0} \frac{1}{\mu(B(x,r))} \int_{B(x,r)} \abs f \, dx \\
+        &\geq \frac{1}{\mu(B(x, \abs x + R)} \int_{B(x, \abs x +R)} \abs f \, dx \\
+        &\geq \frac{1}{\mu(B(x, \abs x + R)} \int_{B(0, R)} \abs f \, dx \\
+        &= \frac{1}{\omega_n(\abs x+R)^n} \int_{B(0, R)} \abs f \, dx &&(\omega_n = \mu(B(0,1)) \text{ in } \R^n) \\
+        &\geq\omega_n^{-1} (\abs x+R)^{-n} \cdot C && \text{($C \not = 0$ by construction of R)} \\ 
+        &\geq C(n, R) (2\abs x)^{-n} = C(n,R) \abs x^{-n}
+    \end{align*}$$
+    where the last line is true for $\abs x \geq R$. Thus we have as $\abs x \to \infty$, $M(f)(x) \geq C(n) \abs x^{-n}$. 
+    Without loss of generality let $R=1$ and find that a spherical change of variables results in 
+    $$\begin{align*}
+        \int_{\R^n} M(f)(x)\, dx 
+        &\geq \int_{\R^n \setminus B(0,1)} M(f)(x)\, dx \\
+        &\geq C\int_{\R^n \setminus B(0,1)} \abs x^{-n} \, dx \\
+        &= C\int_1^\infty \int_{S^{n-1}} r^{n-1}\abs{r\omega}^{-n} \, d\omega \, dr \\
+        &= \tilde C \int_1^\infty r^{-1} \, dr. &&(\abs \omega = 1, \tilde C = SA(S^{n-1 } \cdot C) )
+    \end{align*}$$
+    Using the fact that $1/t$ is not integrable on $t \geq 1$, the result is verified.
+    <br>
+    <br>
+    $(\impliedby)$ For the next exercise we follow the proof of the maximal function theorem. Let $t>0$ and split $f$ into two parts as follows
+    $$\begin{align*}
+        f = f \cdot \chi_{\{ \abs f \leq t/2\}} + f \cdot \chi_{\{ \abs f > t/2\}}.
+    \end{align*}$$
+    Using the supremum version of the triangle inequality we find
+    $$\begin{align*}
+        M(f) \leq M(g) + M(b) \leq t/2 + M(b)
+    \end{align*}$$
+    and with this we can see
+    $$\begin{align*}
+        t< M(f) &\implies t < t/2 + M(b)\\ \implies t/2 < M(b) &\implies \{ M(f)>t\} \subset \{ M(b) > t/2\}. \tag 1
+    \end{align*}$$
+    Now, we bound $\int M(f)$ as follows
+    $$\begin{align*}
+        \int_XM(f) \, d\mu 
+        &= \int_0^\infty \mu(\{ M(f)>t\}) \, dt && \text{(layer cake rep.)}\\
+        &\leq \int_0^\infty \mu(\{ M(b) > t/2\}) \, dt && \text{(follows from (1))} \\
+        &\leq \mu(X) + \int_1^\infty \mu(\{ M(b) >t/2 \}) \, dt && \text{(forcing $f \geq 1$)} \\
+        &\leq  \mu(X) + 2C(\mu) \int_1^\infty \int_{X} 
+        \frac{\abs b}{t} \, d\mu \, dt && \text{(weak estimate)} \\
+        &=  \mu(X) + 2C(\mu) \int_1^\infty \int_{\{\abs f > t/2\}} \frac{\abs f}{t} \, d\mu \, dt && \text{(construction of $b$)} \\
+        &= \mu(X) + 2C(\mu) \int_{X} \int_{1}^{\max(1, 2 \abs f)} \frac{\abs f}{t} \, dt \, d\mu && \text{(Fubini)} \\ %%%% since  1 < t and t/2 < \abs f so we get 1 < t < 2 \abs f   %%%%% 
+        &\leq \mu(X) + 2C(\mu) \int_{X} \abs f \log( \max(1,2 \abs f)) \, d \mu && \text{(evaluating int.)} \\ 
+        &\leq \mu(X) + 2C(\mu) \int_{X} \abs f \log( 4 + 2 \abs f ) \, d \mu \\
+        &= \mu(X) + 2C(\mu) \int_{X} \abs f\left( \log 2 + \log( 2 + \abs f ) \right) \, d \mu  \\
+        &= \mu(X) + 2C(\mu) \p{ \log 2 \int_{X} \abs f \, d \mu  + \int_{X} \abs f \log( 2 + \abs f ) \, d \mu } < + \infty
+        %%%% the best way to visualize this change of variables is to think of it as two varaibles, the first way we are adding up all the "heights" of the hill (i.e. where f>t/2 for some t), the second  way is adding up all the "columns" of the hill. in this visualization (x,y) values will be summed multiple times because they are greater than some t/2 multiple times). Also, we start at 1/2 due to the t-variable, we go to max(1, f) due to the mu variable. the max(1, _) part serves to ignore the areas of the hill with columns shorter than 1 %%%%    
+    \end{align*}$$
+        where the last step is justified because $\log 2 \cdot \abs f \leq \abs f \log(2 + \abs f)$ which is finite by assumption.
+        <br>
+        <br>
+        $(\implies )$ The other direction is trickier and was proven by Stein in the $\R^n$ case in <a href="https://eudml.org/doc/217366">Note on the class $L \log L$</a>.
+  <div align="right">$\qed$</div>
+  </div>
+</details>
+
+<div class="question-block">
   <span class="question-label">Exercise 2.10</span>
   Suppose $\mathcal B = \{ B_1, B_2, \dots\}$ is a countable collection of balls in a doubling space $(X, \mu)$ and that $a_i \geq 0$ are real numbers. Show that
     $$
@@ -260,6 +326,48 @@ $
     $$
     \int_X \p{\sum_\mathcal B a_i \chi_{\lambda B_i}}^p d \mu \leq C (\lambda, p, \mu) \int_X \p{\sum_{\mathcal B} a_i \chi_{B_i}}^p d \mu.
     $$
+    <div align="right">$\qed$</div>
+  </div>
+</details>
+
+<div class="question-block">
+  <span class="question-label">Exercise 2.11</span>
+    Let $\mathcal B = \{ B_i \}_{i \in I} $ be a countable collection of pairwise disjoint balls in a doubling measure space $(X, d, \mu)$. Let 
+    $$\begin{align*}    
+        A_\lambda = \bigcup_i \lambda B_i \text{ and } T_\lambda(x) = \sum_i \chi_{\lambda B_i}(x)
+    \end{align*}$$
+    Show there exists $\epsilon > 0$ such that
+    $$\begin{align*}
+        \int_{A_\lambda}  \exp(\epsilon T_\lambda  ) \, d \mu \leq C(\lambda, \mu) \mu(\cup_i B_i) = C(\lambda, \mu) \mu (A_1).
+    \end{align*}$$
+</div>
+
+<details class="proof-dropdown">
+  <summary>Proof</summary>
+  <div class="proof-content">
+    First expand using the Taylor Series of $e^x$.
+    $$\begin{align*}
+        \int_{A_\lambda}  \exp(\epsilon T_\lambda) \, d\mu &= \sum_{n=0}^\infty \int_{A_\lambda} \frac{\epsilon^n}{n!} (T_\lambda)^n \, d \mu \\
+        &= \int_{A_\lambda} d\mu + \int_{A_\lambda}\epsilon T_\lambda \, d\mu +\sum_{n=2}^\infty \int_{A_\lambda} \frac{\epsilon^n}{n!}  (T_\lambda)^n \, d \mu  \\
+        &= \mu(A_\lambda) + \epsilon \sum_i \mu (\lambda B_i) + \sum_{n=2}^\infty \int_{A_\lambda} \frac{\epsilon^n}{n!}  (T_\lambda)^n \, d \mu 
+        \end{align*}$$
+    which follows directly from the construction of $T_\lambda$. Next, using the doubling property to find
+    $$\begin{align*}
+         &\mu (A_\lambda) + \epsilon \sum_i \mu (\lambda B_i) + \sum_{n=2}^\infty \int_{A_\lambda} \frac{\epsilon^n}{n!}  (T_\lambda)^n \, d \mu  \\
+        & \leq \sum_i \mu (\lambda B_i) + \epsilon \sum_i \mu (\lambda B_i) + \sum_{n=2}^\infty \int_{A_\lambda} \frac{\epsilon^n}{n!}  (T_\lambda)^n \, d \mu  \\
+        & \leq (1+\epsilon) C(\lambda) \sum \mu (B_i) + \sum_{n=2}^\infty \int_{A_\lambda} \frac{\epsilon^n}{n!}  (T_\lambda)^n \, d \mu  \\
+        &= (1+\epsilon) C(\lambda) \mu(A_1) + \sum_{n=2}^\infty \int_{A_\lambda} \frac{\epsilon^n}{n!}  (T_\lambda)^n \, d \mu.
+    \end{align*}$$
+    Next, apply the results of Exercise 2.10 to find
+    $$\begin{align*}
+        & (1+\epsilon) C(\lambda) \mu(A_1) + \sum_{n=2}^\infty \int_{A_\lambda} \frac{\epsilon^n}{n!}  (T_\lambda)^n \, d \mu \\
+        & \leq (1+\epsilon) C(\lambda) \mu(A_1) + \sum_{n=2}^\infty C(\lambda, n, \mu) \frac{\epsilon^n}{n!} \int_{A_1} (T_1)^n  \, d\mu \\
+        & = (1+\epsilon) C(\lambda) \mu(A_1) + \sum_{n=2}^\infty C(\lambda, n, \mu) \frac{\epsilon^n}{n!}  \mu (A_1) = \p{(1+\epsilon) C(\lambda) + \sum_{n=2}^\infty C(\lambda, n, \mu) \frac{\epsilon^n}{n!}} \mu(A_1).
+    \end{align*}$$
+    We now just need to show that the term in front of $\mu (A_1)$ is a constant. Using Exercise 2.9 and following the proof of 2.10 we can see that $C(\lambda, n, \mu) = \widetilde{C}(\lambda) 2^n n /(n-1)$ is a suitable constant for our needs. Using this constant, it is clear to see we can choose $\epsilon > 0$ such that the summation converges. In particular, if $\epsilon = 1/2$, then the summation simplifies to $\sum 1/\p{(n-1)(n-1)!}$ which is less than $e-1$.
+    <br>
+    <br>
+    Note well that the pairwise disjoint condition is slightly strict, but cannot be completely disregarded as a simple counterexample shows. Let $B_k = B(0, 1 + 1/k)$ for $k = 1,2, 3, \dots$. Then no matter what $\epsilon >0$ one chooses, $\exp(T_\lambda \epsilon)$ will be infinite on a set of non-zero measure, the unit ball $B(0, 1)$. Thus, the integral in question will be infinite. Similarly, the support of the chosen balls will be $B(0, 2) < \infty$ and no matter what constant $C$ we choose, $C \cdot \mu(B(0,2)) < \infty$.
     <div align="right">$\qed$</div>
   </div>
 </details>
