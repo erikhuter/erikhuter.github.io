@@ -245,17 +245,16 @@ $
         &\leq  \mu(X) + 2C(\mu) \int_1^\infty \int_{X} 
         \frac{\abs b}{t} \, d\mu \, dt && \text{(weak estimate)} \\
         &=  \mu(X) + 2C(\mu) \int_1^\infty \int_{\{\abs f > t/2\}} \frac{\abs f}{t} \, d\mu \, dt && \text{(construction of $b$)} \\
-        &= \mu(X) + 2C(\mu) \int_{X} \int_{1}^{\max(1, 2 \abs f)} \frac{\abs f}{t} \, dt \, d\mu && \text{(Fubini)} \\ %%%% since  1 < t and t/2 < \abs f so we get 1 < t < 2 \abs f   %%%%% 
+        &= \mu(X) + 2C(\mu) \int_{X} \int_{1}^{\max(1, 2 \abs f)} \frac{\abs f}{t} \, dt \, d\mu && \text{(Fubini)} \\
         &\leq \mu(X) + 2C(\mu) \int_{X} \abs f \log( \max(1,2 \abs f)) \, d \mu && \text{(evaluating int.)} \\ 
         &\leq \mu(X) + 2C(\mu) \int_{X} \abs f \log( 4 + 2 \abs f ) \, d \mu \\
         &= \mu(X) + 2C(\mu) \int_{X} \abs f\left( \log 2 + \log( 2 + \abs f ) \right) \, d \mu  \\
         &= \mu(X) + 2C(\mu) \p{ \log 2 \int_{X} \abs f \, d \mu  + \int_{X} \abs f \log( 2 + \abs f ) \, d \mu } < + \infty
-        %%%% the best way to visualize this change of variables is to think of it as two varaibles, the first way we are adding up all the "heights" of the hill (i.e. where f>t/2 for some t), the second  way is adding up all the "columns" of the hill. in this visualization (x,y) values will be summed multiple times because they are greater than some t/2 multiple times). Also, we start at 1/2 due to the t-variable, we go to max(1, f) due to the mu variable. the max(1, _) part serves to ignore the areas of the hill with columns shorter than 1 %%%%    
     \end{align*}$$
-        where the last step is justified because $\log 2 \cdot \abs f \leq \abs f \log(2 + \abs f)$ which is finite by assumption.
-        <br>
-        <br>
-        $(\implies )$ The other direction is trickier and was proven by Stein in the $\R^n$ case in <a href="https://eudml.org/doc/217366">Note on the class $L \log L$</a>.
+    where the last step is justified because $\log 2 \cdot \abs f \leq \abs f \log(2 + \abs f)$ which is finite by assumption.
+    <br>
+    <br>
+    $(\implies )$ The other direction is trickier and was proven by Stein in the $\R^n$ case in <a href="https://eudml.org/doc/217366">Note on the class $L \log L$</a>.
   <div align="right">$\qed$</div>
   </div>
 </details>
