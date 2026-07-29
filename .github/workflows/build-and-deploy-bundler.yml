@@ -27,7 +27,6 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler --no-document
-          bundle config set --local deployment 'false' || true
           bundle install --jobs 4 --retry 3
 
       - name: Build site with Jekyll
