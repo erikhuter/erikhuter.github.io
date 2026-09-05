@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "This page holds some information about my current research.",
+          description: "This page holds information about my current research.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "This page holds some information about my teaching for the current semester.",
+          description: "This page holds information about my teaching and tutoring services.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -49,26 +49,11 @@ ninja.data = [{
           description: "Selected solutions for various questions from this book.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/heinonen.html";
-            },},{id: "projects-introduction-to-smooth-manifolds-by-john-lee",
-          title: 'Introduction to Smooth Manifolds by John Lee',
-          description: "Selected solutions for various questions from this book.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/lee.html";
             },},{id: "projects-miscellaneous-problems",
           title: 'Miscellaneous Problems',
           description: "Selected solutions to various questions I find interesting or elegant.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/misc.html";
-            },},{id: "projects-real-and-complex-analysis-by-walter-rudin",
-          title: 'Real and Complex Analysis by Walter Rudin',
-          description: "Selected solutions for various questions from this book.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/papa_rudin.html";
-            },},{id: "projects-calculus-on-manifolds-by-micahel-spivak",
-          title: 'Calculus on Manifolds by Micahel Spivak',
-          description: "Selected solutions for various questions from this book.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/spivak.html";
             },},{
         id: 'social-cv',
         title: 'CV',
