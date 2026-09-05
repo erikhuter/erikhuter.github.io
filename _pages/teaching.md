@@ -5,12 +5,14 @@ title: Teaching
 # description: Undergraduate Teaching Assistant
 nav: true
 nav_order: 4
-description: This page holds some information about my teaching for the current semester.
+description: This page holds information about my teaching and tutoring services.
 sitemap: true
 calendar: true
 ---
 
-Next fall, the K-State math department may potentially be introducing undergraduate teaching assistants. Should they be implemented and I am selected as a teaching assistant, this page will hold my class information and office hours. I will also attach extra resources for more help.
+I offer tutoring services for various high school and college mathematics or statistics courses. Contact me by <a href="mailto:huter.erik@gmail.com"> email </a> for more details about the rates and services.
+
+Next spring, the K-State math department may potentially be introducing undergraduate teaching assistants. Should they be implemented and I am selected as a teaching assistant, this page will hold my class information and office hours. I will also attach extra resources for more help.
 
 <!-- This semester, I am one of the inaugural undergraduate teaching assistants at K-State.
 

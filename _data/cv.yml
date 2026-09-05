@@ -23,7 +23,7 @@ cv:
         highlights:
           - "GPA: 4.00/4.00"
           - "University Honors Program"
-          - "Math Department Acting Ambassador, Math Club Officer"
+          # - "Math Department Acting Ambassador, Math Club Officer"
 
       - institution: Derby High School
         location: Derby, KS
@@ -83,6 +83,12 @@ cv:
           - "Supported by the National Science Foundation"
 
     Additional Experience:
+      - name: Function Theory Seminar Talk
+        location: "Kansas State University"
+        date: "Fall 2026"
+        highlights:
+          - "Gave a talk about the Hardy-Littlewood maximal function in the doubling metric measure space setting"
+          - "Proved many of the fundamental results and discussed the many applications of this function in analysis"
       - name: "Putnam and KCMC Problem Solving Seminar"
         location: "Kansas State University"
         start_date: "2025-08"
@@ -135,17 +141,19 @@ cv:
       - bullet: "**Passed Exam FM**, SOA (April 2025)"
 
     Advanced Coursework:
+      - bullet: "**MATH 512**: Introduction to Modern Algebra, Grade: A"
+      - bullet: "**STAT 610/611**: Mathematical Statistics I & II, Grade: A"
+      - bullet: "**MATH 500**: Mathematical Theory of Interest, Grade: A"
+      - bullet: "**MATH 560**: Introduction to Topology, Grade: A"
+      - bullet: "**MATH 510**: Discrete Mathematics, Grade: A"
       - bullet: "**MATH 721**: Introduction to Real Analysis, Grade: A"
-      - bullet: "**MATH 821**: Real Analysis, Grade: tbd"
       - bullet: "**MATH 723**: Complex Functions, Grade: A"
       - bullet: "**MATH 882**: Differential Geometry, Grade: A"
-      - bullet: "**MATH 730/731**: Abstract Algebra I & II, Grade: tbd"
-      - bullet: "**MATH 770/771**: Introduction to Topology/Geometry I & II, Grade: tbd"
-      - bullet: "**STAT 610/611**: Mathematical Statistics I & II, Grade: A"
       - bullet: "**STAT 770**: Theory of Statistics, Grade: tbd"
-      - bullet: "**MATH 512**: Introduction to Modern Algebra, Grade: A"
-      - bullet: "**MATH 560**: Introduction to Topology, Grade: A"
-      - bullet: "**MATH 500**: Mathematical Theory of Interest, Grade: A"
+      - bullet: "**MATH 821**: Real Analysis, Grade: tbd"
+      - bullet: "**MATH 825**: Complex Analysis, Grade: tbd"
+      - bullet: "**MATH 770/771**: Introduction to Topology/Geometry I & II, Grade: tbd"
+      - bullet: "**MATH 731**: Abstract Algebra II, Grade: tbd"
 
     Technical Skills:
       - label: "Languages"

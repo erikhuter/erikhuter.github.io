@@ -8,6 +8,7 @@ category: Textbook Solutions #this is where the category goes
 related_publications: false
 sitemap: true
 mathjax: true
+published: false #REMOVE THIS LINE WHEN IMPLEMENTING A NEW PROJECT
 ---
 
 <style>
