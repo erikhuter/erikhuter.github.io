@@ -7,7 +7,7 @@ subtitle: <a href="mailto:huter.erik@gmail.com"> huter.erik@gmail.com </a> &ensp
 
 profile:
   align: right
-  image: headshot.jpeg
+  image: headshot.jpg
   image_circular:
     false # crops the image to make it circular
     # <p> Office (pleaseeee kerrrr)</p>
@@ -32,13 +32,13 @@ latest_posts:
 
 My name is Erik Huter. I am an undergraduate student at Kansas State University studying mathematics and statistics. I expect to graduate in May 2027. Upon completion of my undergraduate studies, I aspire to pursue a PhD in pure mathematics.
 
-My current reading list includes: Calculus on Manifolds by Michael Spivak, Smooth Manifolds by John Lee, and Lectures on Analysis on Metric Spaces by Juha Heinonen. I am working on my own collection of various solutions to exercises from these books (and various other problems) in my [projects](/projects/) page. This project is on a temporary pause for application season.
+My research interests currently lie in real and complex analysis, but I am still young in my mathematical journey and look forward to exploring many areas of mathematics. I am currently working on a project in geometric measure theory. For more information about my research, click [here](/research/).
 
-My research interests currently lie in real and complex analysis, but I am still young in my mathematical journey and look forward to exploring many other areas of mathematics. I am currently working on a project in geometric measure theory. For more information about my research, click [here](/research/).
+My current reading list includes: Smooth Manifolds by John Lee and Lectures on Analysis on Metric Spaces by Juha Heinonen. I am working on my own collection of various solutions to exercises from these books (and various other problems) in my [projects](/projects/) page. This project is on a temporary pause for application season.
 
-Other areas I am actively looking to learn about are introductory category theory and several variable complex analysis (or other further topics in complex analysis). I welcome any and all recommendations for textbooks in these subjects (or even others!).
+Over the summer, I hope to also learn some Lean. Other topics I am actively looking to learn about are category theory and several variable complex analysis (or other further topics in complex analysis). I welcome any and all recommendations for textbooks in these subjects (or even others!).
 
-In the Fall 2026 semester, I am taking Introduction to Topology/Geometry I (Math 770), Measure Theory* (Math 821), and Topics in Complex Analysis* (MATH 825). Next semester, Spring 2027, I plan to take Abstract Algebra II (Math 731), Introduction to Topology/Geometry II (Math 771), and hopefully another analysis class.
+In the Fall 2026 semester, I am taking Introduction to Topology/Geometry I (Math 770), Measure Theory* (Math 821), and Topics in Complex Analysis* (MATH 825). Next semester, Spring 2027, I plan to take Functional Analysis (Math 799), Introduction to Topology/Geometry II (Math 771), and Analytic Number Theory (MATH 831).
 
-My hobbies and interests outside of mathematics include soccer, volleyball, video games, rock climbing, and my two cats Snowflake and Fubini. I am an avid K-State fan (Go Cats!) and college sports enthusiast.
+My hobbies and interests outside of mathematics include soccer, volleyball, video games, rock climbing, and my two cats Snowflake and Fubini. I am an avid K-State fan (Go Cats!) and college sports fan in general.
 <!-- In the moments I find myself with extra free time, I like to play Rocket League, Clash of Clans, Valorant, or Minecraft. -->
